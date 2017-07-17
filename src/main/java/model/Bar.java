@@ -33,5 +33,21 @@ public class Bar implements Serializable, DominoModel {
         return side2;
     }
 
-  
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Bar bar = (Bar) o;
+
+        if (side1 != bar.side1) return false;
+        return side2 == bar.side2;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = side1;
+        result = 31 * result + side2;
+        return result;
+    }
 }
