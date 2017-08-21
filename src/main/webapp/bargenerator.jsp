@@ -3,9 +3,14 @@
 <html>
 <head>
     <title>Bars generator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
 
+<div class="jumbotron">
 <table class="bars-table">
 
     <tr>
@@ -18,13 +23,15 @@
         </tr>
     </c:forEach>
 </table>
-
-<form name="generate" method="post" action="/generate">
-    <p><input type="submit" name="start" value="START">
-    <p><input type="submit" name="roll" value="RE-ROLL">
-</form>
 <br>
-<a href="/results">To results page</a>
-
+    <form name="generate" method="post" action="/generate">
+        <p><input class="btn-light" type="submit" name="start" value="START">
+        <p><input class="btn-warning" type="submit" name="roll" value="RE-ROLL">
+    </form>
+</div>
+<div id="actions">
+    <br>
+    <a class="btn btn-outline-primary" href="/results">To results page</a>
+</div>
 </body>
 </html>

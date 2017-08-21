@@ -3,8 +3,13 @@
 <html>
 <head>
     <title>Chains</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
+<div class="jumbotron">
 <h1>Current chainbar</h1>
 <b><c:forEach items="${requestScope.showCurrentBars}" var="bar">
     ${bar.getString()}
@@ -47,8 +52,11 @@ Your custom chain:
 </table>
 <br>
 <br>
-<a href="/generate">Back to bars generation page</a>
-<br>
-<a href="/">Back to main page</a>
+</div>
+<div id="actions">
+    <a class="btn btn-outline-primary" href="/generate">Back to bars generation page</a>
+    <br>
+    <a class="btn btn-outline-primary" href="/">Back to main page</a>
+</div>
 </body>
 </html>
