@@ -18,3 +18,16 @@
 #actions {
     margin-left: 10px;
 }
+
+#actions a {
+    margin-bottom: 10px;
+}
+
+.bars-table td {
+    font-size: 18px;
+    color: orange;
+}
+
+#start {
+    width: 20px;
+}
