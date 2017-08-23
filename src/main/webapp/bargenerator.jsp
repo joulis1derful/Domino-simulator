@@ -3,9 +3,9 @@
 <html>
 <head>
     <title>Bars generator</title>
+    <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
@@ -25,8 +25,8 @@
 </table>
 <br>
     <form name="generate" method="post" action="/generate">
-        <p><input class="btn-light" type="submit" name="start" value="START">
-        <p><input class="btn-warning" type="submit" name="roll" value="RE-ROLL">
+        <p><button id="start" class="btn-light">START</button></p>
+        <p><button id="reroll" class="btn-warning">RE-ROLL</button></p>
     </form>
 </div>
 <div id="actions">

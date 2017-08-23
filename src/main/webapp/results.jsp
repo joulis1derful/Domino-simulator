@@ -3,9 +3,9 @@
 <html>
 <head>
     <title>Chains</title>
+    <link rel="stylesheet" href="css/reset.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/script.js"></script>
     <script src="js/jquery-3.2.1.js"></script>
 </head>
 <body>
@@ -28,8 +28,8 @@ Your custom chain:
 
 <br>
 
-<form name="inputform" method="post" action="/results">
-    <p><input type="text" name="digit" size="20"> <input type="submit" name="makechoice" value="Select"></p>
+<form id="inputform" name="inputform" method="post" action="/results">
+    <p><input id="variant" type="text" name="digit" size="20"> <input type="submit" name="makechoice" value="Select"></p>
     <input type="submit" name="upload" value="Upload chain">
 </form>
 
@@ -55,8 +55,10 @@ Your custom chain:
 </div>
 <div id="actions">
     <a class="btn btn-outline-primary" href="/generate">Back to bars generation page</a>
-    <br>
+    <br/>
+    <br/>
     <a class="btn btn-outline-primary" href="/">Back to main page</a>
 </div>
+<script src="js/validation.js"></script>
 </body>
 </html>
